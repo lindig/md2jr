@@ -1,6 +1,8 @@
 
 <!-- vim: set et spell -->
 
+![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
+
 # MD2JR - Markdown to Jira Conversion
 
 This is a crude tool to convert [Markdown] to [Jira] syntax:

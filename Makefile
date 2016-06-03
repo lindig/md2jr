@@ -47,11 +47,11 @@ setup:	_oasis
 NAME	= md2jr
 TAG	= 0.1
 GITHUB	= https://github.com/lindig/$(NAME)
-TAR	= $(GITHUB)/archive/$(TAG)/$(NAME)-$V.tar.gz
+TAR	= $(GITHUB)/archive/$(TAG)/$(NAME)-$(TAG).tar.gz
 
 url:	FORCE
 	echo	"archive: \"$(TAR)\"" > url
-	echo	"checksum: \"`curl -L $(TAR| md5 -q`\"" >> url
+	echo	"checksum: \"`curl -L --fail $(TAR)| md5 -q`\"" >> url
 
 FORCE:;
 

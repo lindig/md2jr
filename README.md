@@ -3,6 +3,8 @@
 
 ![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)
 
+[![Build Status](https://travis-ci.org/lindig/md2jr.svg?branch=master)](https://travis-ci.org/lindig/md2jr)
+
 # MD2JR - Markdown to Jira Conversion
 
 This is a crude tool to convert [Markdown] to [Jira] syntax:

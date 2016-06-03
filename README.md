@@ -39,3 +39,8 @@ You can also install from source code:
 
 This is an early release with quite some problems left. Code
 contributions are welcome.
+
+
+[OCaml]:    http://ocaml.org
+[Jira]:     https://www.atlassian.com/software/jira
+[Markdown]: https://daringfireball.net/projects/markdown/

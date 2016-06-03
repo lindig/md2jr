@@ -1,0 +1,25 @@
+opam-version   : "1.2"
+name           : "md2jr"
+version        : "0.1"
+maintainer     : "Christian Lindig <lindig@citrix.com>"
+authors        : ["Christian Lindig <lindig@citrix.com>"]
+license        : "MIT"
+homepage       : "https://github.com/lindig/md2jr"
+bug-reports    : "https://github.com/lindig/md2jr/issues"
+dev-repo       : "https://github.com/lindig/md2jr.git"
+build: [
+  ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
+  ["ocaml" "setup.ml" "-build"]
+]
+install: [
+  ["ocaml" "setup.ml" "-install"]
+]
+remove: [
+  ["ocamlfind" "remove" "md2jr"]
+]
+depends: [
+  "cmdliner"
+  "omd"
+  "oasis" {build}
+  "ocamlfind" {build}
+]

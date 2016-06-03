@@ -1,0 +1,4 @@
+md2jr - conversion from Markdown to Jira syntax
+
+This is a crude tool to convert Markdown to Jira synatx. I'm using it
+only as a first approximation. Code contributions are welcome.

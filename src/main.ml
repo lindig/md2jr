@@ -7,7 +7,7 @@ module F  = Format
 module C  = Cmdliner
 
 let printf  = Format.printf
-let kb      = 1024 * 1024
+let kb      = 1024
 
 let finally opn cls =
   let res = try opn () with exn -> cls (); raise exn

@@ -75,6 +75,8 @@ and element
   | Raw_block(str)    -> printf "%s" str
   | Blockquote(t)     -> printf "@.@[bq. "; elements t; printf "@.@]"
   | Img(alt,src,_)    -> printf "!%s|%s!" src alt
+  | X(x)              -> printf "[%s]" x#name
+  | Ref(_,name,_,_)   -> printf "%s" name
   | _                 -> ()
 
 let md2jr
